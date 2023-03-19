@@ -1,16 +1,14 @@
-# AWS Compute Optimizer Terraform module
+# AWS Compute Optimizer Terraform Sample
 
-Terraform Infrastructure as code (IaC) template for AWS Compute Optimizer module to Opting in or out your account.
+This Terraform Infrastructure as code (IaC) sample helps to Opting in or Opting out [AWS Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/getting-started.html) in your account.
 
 ## Limitations
 
-Currently Terraform does not have resource for AWS Compute Optimizer. Below is open issue:
+There is open issueto [Add resources for ComputeOptimizer Recommendation Preferences](https://github.com/hashicorp/terraform-provider-aws/issues/23945). So currently Terraform does not have resource for AWS Compute Optimizer.
 
-[Add resources for ComputeOptimizer Recommendation Preferences](https://github.com/hashicorp/terraform-provider-aws/issues/23945)
+As a workaround, we tried to provide customised sample to opt-in and opt-out your account for AWS compute optimizer. You may need to update the code as per your requirements and Terraform releases.
 
-As workaround, we tried to provide customised way to opt-in and opt-out your account for AWS compute optimizer. We may need to update it as per the requirements and Terraform releases.
-
-[AWS Documentation on put-recommendation-preferences](https://docs.aws.amazon.com/cli/latest/reference/compute-optimizer/put-recommendation-preferences.html)
+For more details, refer [AWS Documentation on put-recommendation-preferences](https://docs.aws.amazon.com/cli/latest/reference/compute-optimizer/put-recommendation-preferences.html).
 
 ## Requirements
 
@@ -28,7 +26,7 @@ As workaround, we tried to provide customised way to opt-in and opt-out your acc
 
 ## Usage
 
-Update variables in dev.auto.tfvars as per the configuration required.
+Update the variables in `dev.auto.tfvars` file as per your requirement.
 
 ## Example output
 
