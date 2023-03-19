@@ -4,7 +4,7 @@ This Terraform Infrastructure as code (IaC) sample helps to Opting in or Opting 
 
 ## Limitations
 
-There is open issueto [Add resources for ComputeOptimizer Recommendation Preferences](https://github.com/hashicorp/terraform-provider-aws/issues/23945). So currently Terraform does not have resource for AWS Compute Optimizer.
+There is open issue to [Add resources for ComputeOptimizer Recommendation Preferences](https://github.com/hashicorp/terraform-provider-aws/issues/23945). So currently Terraform does not have resource for AWS Compute Optimizer.
 
 As a workaround, we tried to provide customised sample to opt-in and opt-out your account for AWS compute optimizer. You may need to update the code as per your requirements and Terraform releases.
 
