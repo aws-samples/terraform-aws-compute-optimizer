@@ -8,7 +8,7 @@ locals {
   #common prefix for command is added
   command_prefix = "aws compute-optimizer put-recommendation-preferences"
 
-  scope_parameters = var.scope_name == null ? null : (var.scope_name == "Organization") ? "--scope-name=Organization,value=${var.scope_value}" : (var.scope_name == "AccountId" && length(var.scope_value) == 12) ? "--scope name=AccountId,value=${var.scope_value}" : (var.scope_name == "ResourceArn") ? "--scope name=ResourceArn,value=${var.scope_value} " : ""
+  scope_parameters = var.scope_name == null ? null : (var.scope_name == "Organization") ? "--scope name=Organization,value=${var.scope_value}" : (var.scope_name == "AccountId" && length(var.scope_value) == 12) ? "--scope name=AccountId,value=${var.scope_value}" : (var.scope_name == "ResourceArn") ? "--scope name=ResourceArn,value=${var.scope_value} " : ""
 
   resuorce_type_parameters = var.resource_type == null ? null : "--resource-type ${var.resource_type}"
 
