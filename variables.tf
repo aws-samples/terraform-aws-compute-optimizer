@@ -32,8 +32,8 @@ variable "resource_type" {
   description     = "The target resource type of the recommendation preference to create."
   default         = null
   validation {
-    condition     = var.resource_type == null ? true : (var.resource_type == "Ec2Instance" || var.resource_type == "AutoScalingGroup" || var.resource_type == "EbsVolume" || var.resource_type == "LambdaFunction" || var.resource_type == "NotApplicable")
-    error_message = "Value has to be from the list :[Ec2Instance,AutoScalingGroup,EbsVolume,LambdaFunction,NotApplicable]."
+    condition     = var.resource_type == null ? true : (var.resource_type == "Ec2Instance" || var.resource_type == "AutoScalingGroup" || var.resource_type == "EbsVolume" || var.resource_type == "LambdaFunction" || var.resource_type == "NotApplicable" || var.resource_type == "EcsService" || var.resource_type == "License" || var.resource_type == "RdsDBInstance")
+    error_message = "Value has to be from the list :[Ec2Instance,AutoScalingGroup,EbsVolume,LambdaFunction,NotApplicable,EcsService,License,RdsDBInstance]."
   }
 }
 
